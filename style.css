@@ -1,8 +1,16 @@
 body {
+   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
   font-family: 'Poppins', sans-serif;
   scroll-behavior: smooth;
   background-color: #f9f9f9;
   color: #333;
+}
+
+.bg-light {
+  background-color: transparent !important;
 }
 
 .container {
@@ -10,13 +18,23 @@ body {
 }
 
 .section {
-  padding: 60px 20px;
+    /* background-color: rgba(255,255,255,0.6);  */
 }
 
 .section h2 {
   font-size: 2rem;
   font-weight: 600;
   margin-bottom: 30px;
+  text-align: center;
+  width: 100%;
+}
+
+.section p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: center;
+  margin-top: 20px;
+  color: #333;
 }
 
 header#hero {
@@ -31,50 +49,21 @@ header h1 {
 }
 
 header .display-4 {
-    color: white;
-}
-header .hello{
-        color:  #ffcc00;
-
-
-}
-header .name {
-    color:  #ffcc00;
-    font-size: 2.5rem;
-  font-weight: 700;
-}
-
-.developer-line {
-  overflow: hidden;
-  white-space: nowrap;
-  box-sizing: border-box;
-  width: 100%;
-  max-width: 100%;
-  height: 30px;
-  margin-top: 10px;
-  position: relative;
-}
-
-.developer-line span {
-  display: inline-block;
-  padding-left: 100%;
-  animation: slide-infinite 8s linear infinite;
-  font-size: 1.1rem;
   color: white;
 }
 
-@keyframes slide-infinite {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
+header .hello {
+  color: #ffcc00;
 }
 
+header .name {
+  color: #ffcc00;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
 
 .hero-photo {
-   max-width: 700px;
+  max-width: 700px;
   border-radius: 50%;
   border: 5px solid #ffcc00;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
@@ -86,57 +75,21 @@ footer {
   font-size: 0.9rem;
 }
 
-.social-icons i {
-  font-size: 1.5rem;
-  color: #333;
-  transition: 0.3s ease;
-}
-
-.social-icons i:hover {
-  color: #ffcc00;
-}
-
 ul {
   padding-left: 20px;
   text-align: left;
 }
 
-
-#publication h5 {
-  font-weight: 600;
-  color: #1e3c72;
-}
-
-
-/* ✅ CONTACT SECTION (No Scroll + Icons Fixed) */
-
-.section h2 {
-  font-size: 2rem;
-  font-weight: 600;
-  margin-bottom: 30px;
-  text-align: center;
-  width: 100%;
-}
-
-.section p {
-  font-size: 1.2rem;
-  line-height: 1.6;
-  text-align: center;
-    margin-top: 20px; 
-    color: #333;
-  /* margin-top: 10px; */
-}
-
 .contact-icons {
   display: flex;
-  flex-wrap: wrap;                    /* allow wrapping */
-  justify-content: center;           /* center-align all items */
+  flex-wrap: wrap;
+  justify-content: center;
   align-items: center;
   gap: 30px;
   font-size: 1rem;
   padding-top: 20px;
-  max-width: 100%;                   /* remove overflow */
-  margin: 0 auto;                    /* center inside container */
+  max-width: 100%;
+  margin: 0 auto;
   text-align: center;
 }
 
@@ -162,7 +115,6 @@ ul {
   color: #182848;
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .contact-icons {
     flex-direction: column;
