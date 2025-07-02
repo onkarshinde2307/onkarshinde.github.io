@@ -141,10 +141,16 @@ img {
 /* Improve padding on smaller screens */
 /* mobile screen  photo issue */
 @media (max-width: 767px) {
+  header#hero {
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+
   .hero-photo {
-    width: 90%;
-    max-width: 300px;
+    width: 95vw;
+    max-width: none;
     margin: 20px auto;
+    display: block;
   }
 
   .typing-line {
