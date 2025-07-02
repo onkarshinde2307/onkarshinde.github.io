@@ -162,5 +162,13 @@ img {
     margin: 8px 0;
   }
 }
+/* mobile screen  photo issue */
+@media (max-width: 767px) {
+  .hero-photo {
+    width: 90vw;
+    max-width: 350px;
+  }
+}
+
 
  
