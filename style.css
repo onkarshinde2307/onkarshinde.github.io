@@ -163,12 +163,12 @@ img {
   }
 }
 /* mobile screen  photo issue */
-@media (max-width: 767px) {
+ @media (max-width: 767px) {
   .hero-photo {
     width: 90vw;
     max-width: 350px;
+    margin: auto;
   }
 }
-
 
  
