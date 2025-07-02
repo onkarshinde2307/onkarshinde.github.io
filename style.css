@@ -137,11 +137,14 @@ img {
   height: auto;
 }
 
+
 /* Improve padding on smaller screens */
+/* mobile screen  photo issue */
 @media (max-width: 767px) {
   .hero-photo {
-    width: 70%;
-    margin: auto;
+    width: 90%;
+    max-width: 300px;
+    margin: 20px auto;
   }
 
   .typing-line {
@@ -162,13 +165,6 @@ img {
     margin: 8px 0;
   }
 }
-/* mobile screen  photo issue */
- @media (max-width: 767px) {
-  .hero-photo {
-    width: 90vw;
-    max-width: 350px;
-    margin: auto;
-  }
-}
+
 
  
