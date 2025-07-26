@@ -7,9 +7,9 @@ $(document).ready(function () {
 });
 
 
-const text = "Full Stack .NET Developer | 1.6+ Years Experience";
-const typeSpeed = 60;
-const pauseTime = 1800;
+const text = "Full Stack .NET Developer | 1.2+ Years Experience";
+const typeSpeed = 70;    // speed willl be be calculated in the milliseconds
+const pauseTime = 1000;
 
 function startTyping() {
   const el = document.getElementById("typedText");

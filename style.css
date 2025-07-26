@@ -126,3 +126,40 @@ ul {
     justify-content: center;
   }
 }
+
+ /* Fix horizontal scroll issue on mobile */
+body {
+  overflow-x: hidden;
+}
+
+/* Ensure images don't overflow */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Improve padding on smaller screens */
+@media (max-width: 767px) {
+  .hero-photo {
+    width: 70%;
+    margin: auto;
+  }
+
+  .typing-line {
+    font-size: 1rem;
+  }
+
+  .section {
+    padding: 40px 15px;
+  }
+
+  ul.text-start {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  .contact-icons a, .contact-icons span {
+    display: block;
+    margin: 8px 0;
+  }
+}
